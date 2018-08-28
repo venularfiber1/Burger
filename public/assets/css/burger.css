@@ -1,0 +1,126 @@
+body {
+	font-family: 'Pavanam', sans-serif;
+	background-image: url("https://rfclipart.com/image2/big/73-39-13/fast-food-background-with-doughnut-hotdog-ice-cream-burger-fries-and-pizza-Download-Royalty-free-Vector-File-EPS-293565.jpg");
+/* background-color: #9a97a4; */
+}
+
+
+
+#name {
+	display: inline-block;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+#name:hover {
+	background-color: #f1e215;
+}
+
+.links:hover {
+	background-color: #f1e215;
+}
+
+
+h1, p {
+	text-align: center;
+}
+
+h1 {
+	position: relative;
+    color: rgba(0, 0, 0, .3);
+    color: black;
+    font-weight: bold;
+    font-family: 'Tauri', sans-serif;
+}
+
+
+
+
+
+p {
+	font-size: 17px;
+}
+
+
+.main {
+	margin: auto;
+	width: 400px;
+}
+
+
+.both {
+	margin: auto;
+	width: 600px;
+}
+
+.left {
+	width: 300px;
+	position: relative;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.right {
+	width: 300px;
+	position: relative;
+	float: right;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+
+.burger, .devoured-burgers {
+	position: relative;
+	width: 270px;
+	height: 60px;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+    padding: 10px;
+	border: 1px solid lightyellow;
+	border-bottom: 5px solid black;
+}
+
+
+.devoured-burgers {
+	background-color: lightyellow;
+    border: 1px solid #f0b28c;
+    border-bottom: 5px solid red;
+}
+
+
+.devour{
+	background-color: lightcoral;
+}
+.eat-again{
+	background-color: lightgray;
+}
+
+input {
+	display: block;
+	margin: auto;
+	width: 290px;
+	height: 65px;
+	padding: 10px;
+	background-color: #efefef;
+	font-size: 19px;
+	text-align: center;
+	border: 3px solid black;
+}
+
+
+#order {
+	display: block;
+	margin: auto;
+	width: 180px;
+	height: 30px;
+	padding-top: 3px;
+	background-color:lightblue;
+	color: gray;
+	font-size: 17px;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+

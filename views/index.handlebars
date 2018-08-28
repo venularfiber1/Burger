@@ -1,0 +1,71 @@
+<div class="header">
+
+  <div id="name">
+  
+  </div>
+</div>
+
+<div class="main">
+
+<iframe src="https://giphy.com/embed/XbAYSN0jUBQbe" width="480" height="245" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reaction-XbAYSN0jUBQbe"></a></p>
+
+  <h1>Eat Your Heart Out!</h1>
+</div>
+
+<div class="both">
+
+  <div class="left">
+  {{#each burgers}}
+    {{#unless this.devoured}}
+    <div class="burger">
+      <div class="order">
+        {{this.burger_name}}
+      </div>
+      <div>
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button type="submit" class="devour">
+            Devour it!
+          </button>
+        </form>
+      </div>
+    </div>
+    {{/unless}}
+  {{/each}}
+  </div>
+
+  <div class="right">
+  {{#each burgers}}
+    {{#if this.devoured}}
+    <div class="devoured-burgers">
+      <div class="order">
+        {{this.id}}
+        {{this.burger_name}}
+          <form action="/{{this.id}}?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="eat-again">
+              Eat Again!
+            </button>
+          </form>
+      </div>
+    </div>
+    {{/if}}
+  {{/each}}
+  </div>
+</div>
+
+<div class="main">
+ 
+  <form class="create-update-form" action="/" method="POST">
+    <div class="form-group">
+      <input type="text" id="ca" name="name" placeholder="Food Name" required/>
+    </div>
+    <button type="submit" id="order">
+New Food    </button>
+  </form>
+
+
+  
+  <div class="line"></div>
+
+</div>
